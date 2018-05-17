@@ -1,0 +1,22 @@
+{
+  "name": "travely",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaen90/travely.git"
+  },
+  "author": "Nazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaen90/travely/issues"
+  },
+  "homepage": "https://github.com/kaen90/travely#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
