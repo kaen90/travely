@@ -1,4 +1,24 @@
 .usa{
 	background-image: url("../image/freedom-bg.png");
-	
+	background-size: cover;
+}
+.container{
+	position: relative;
+	text-align: center;
+}
+.ind{
+	padding: 5px;
+}
+.price{
+	top: 10px;
+}
+.per-price{
+	background-color: rgba(62, 63, 65, 0.7);
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	border-radius: 10px;
+}
+.text-price{
+	margin-bottom: 0;
 }

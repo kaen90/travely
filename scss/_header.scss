@@ -1,78 +1,61 @@
-.mycarousel{
-	height: 90vh;
-}
-.logo{
-	font-family: 'PT Sans', sans-serif;
-	font-weight: 700;
-	font-size: 2.25rem;
-}
-.nav{
-	list-style: none;
-	padding: 0;
-	margin: 30px;
-	/* width: 50px; */
-	transition: opacity .3s ease-in-out;
-	display: flex;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-}
 
-.nav:hover{
-	opacity: 1;
-}
+$fontFamily: 'Quicksand', sans-serif;
+$defaultColor: #cecece;
+$defaultFontSize: 20px;
+$defaultHeight: 50px;
+body {
 
-.nav li{
-	width: 50px;
+  .search-input {
+    outline: none;
+    font-family: $fontFamily;
+    background-color: $defaultColor;
+    border: none;
+    height: $defaultHeight;
+    color: #606060;
+    padding-left: 10px;
+    font-size: $defaultFontSize;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition-timing-function: ease-in;
+    transition: transform 0.4s, visibility 0.4s;
+  }
+  .search-button {
+    cursor: pointer;
+    // position: absolute;
+    height: 52px;
+    outline: none;
+    border: none;
+    padding: 18px;
+    background-color: #fd5c08;
+    color: white;
+    // left: 250px;
+    &:hover {
+      color: $defaultColor;
+      transition: 0.3s linear;
+      background-color: #fd5c08;
+    }
+  }
+}
+.mynav li{
+   text-align: center;
+   width: 62px;
+    & a{
 	height: 50px;
-	overflow: hidden;
-	transition: width .2s ease-in, height .2s ease-in-out .2s;
+	&:not(first-child){
+	background-color: #606060;
+	&:hover {
+		background-color: #fd5c08;
+	}
+	}
+	}
 }
-.nav li:hover{
-	width: 200px;
-	height: 200px;
+.b-info{
+	width: 186px;
 }
-.nav li a{
-	display: block;
-	width: 200px;
-	height: 40px;
-	line-height: 40px;
-	background: #bbb;
-	margin: 2px;
-	color: #FFF;
-	padding-left: 15px;
-	cursor: pointer;
-	-webkit-transition: background .2s ease-in-out ;
-	   -moz-transition: background .2s ease-in-out ;
-	    -ms-transition: background .2s ease-in-out ;
-	     -o-transition: background .2s ease-in-out ;
-	        transition: background .2s ease-in-out ;
+.myheader{
+	height: 85vh;
 }
-.nav li a:hover{
-	background: #2fc5ff;
-}
-.nav li a:first-child{
-	font-size: 1.1em;
-	height: 50px;
-	line-height: 50px;
-	position: relative;
-	text-indent: 36px;
-}
-.nav li a:first-child::before{
-	content: '';
-	position: absolute;
-	display: block;
-	height: 32px;
-	width: 32px;
-	top: 9px;
-	left: 9px;
-}
-.flight a:first-child::before{
-	background: url(../image/icon_1.png) center no-repeat;
-}
-.coffee a:first-child::before{
-	background: url(../image/icon_2.png) center no-repeat;
-}
-.car a:first-child::before{
-	background: url(../image/icon_3.png) center no-repeat;
+.mylogo{
+	font: bold 100px/100px PT-Sans, sans-serif;
 }

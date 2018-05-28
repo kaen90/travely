@@ -1,2 +1,15 @@
-.personaly {
-  background-image: url("../image/zebra-bg.png"); }
+.africa {
+  background-image: url("../image/zebra-bg.png");
+  background-size: cover; }
+
+.afrproposition {
+  position: relative; }
+
+.afrbtn {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.afrimg {
+  position: absolute;
+  right: 0; }

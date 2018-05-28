@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
@@ -20,153 +21,198 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand text-warning logo" href="#">TRAVELY</a>
+                <a class="navbar-brand text-warning logo mylogo" href="#">TRAVELY</a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Plane ticketss<span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active mr-5 menu-item">
+                            <img src="image/icon_plane.png">
+                            <a class="nav-link text-uppercase menu-link" href="#">Plane ticketss<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Travel</a>
+                        <li class="nav-item mr-5 menu-item">
+                            <img src="image/icon_travel.png">
+                            <a class="nav-link d-block text-uppercase menu-link" href="#">Travel</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rent car</a>
+                        <li class="nav-item mr-5 menu-item">
+                            <img src="image/icon_rent.png">
+                            <a class="nav-link d-block text-uppercase menu-link" href="#">Rent car</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hotels</a>
+                        <li class="nav-item menu-item">
+                            <img src="image/icon_hotels.png">
+                            <a class="nav-link text-uppercase menu-link" href="#">Hotels</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    <input type="text" class="search-input" placeholder="Search Input" />
+                      <button type="button" class="search-button"><i class="fa fa-search"></i></button>
                 </div>
             </nav>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide  " data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active mycarousel">
+                <div class="carousel-item active myheader">
                     <img class="d-block w-100" src="image/header-amr.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block text-left">
+                    <div class="carousel-caption d-none d-md-block text-left htext">
                     	<div class="row">
                     		<div class="col-6 d-none d-md-block">
 		                        <h4 class="promo-expiarence">EXPERIENCE</h4>
-		                        <h2 class="promo-country">AMERICAN Holliday</h2>
+		                        <h1 class="promo-country text-uppercase">AMERICAN Holliday</h1>
 		                        <p class="promo-text">America has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors, its hospitality just gets better.</p>
 		                    </div>
-		                    <div class="col-6 d-sm-none d-md-block d-xs-none">	
-	                        	<ul class="nav">
-							    	<li class="flight">
-							        	<a>Flight</a>
-							        	<div>
-							            	<p>Starting at</p>
-							            	<h6>$210</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="coffee">
-							        	<a>Hotel</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$5</h6>
-							       		</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="car">
-							        	<a>Car rental</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$20</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							      	</li>
-							    </ul>
-	                        </div>
+                            <div class="col-3 d-none d-md-block offset-md-3">
+                                <ul class="nav nav-pills mynav" id="pills-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="image/icon_1.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="image/icon_2.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="image/icon_3.png"></a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">250</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">50</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">100</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
 		                </div>
                     </div>
                 </div>
-                <div class="carousel-item mycarousel">
+                <div class="carousel-item myheader">
                     <img class="d-block w-100" src="image/header-eur.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block text-left">
+                    <div class="carousel-caption d-none d-md-block text-left htext">
                     	<div class="row">
                     		<div class="col-6 d-none d-md-block">
 		                        <h4 class="promo-expiarence">EXPERIENCE</h4>
-		                        <h2 class="promo-country">European Holliday</h2>
+		                        <h1 class="promo-country text-uppercase">European Holliday</h1>
 		                        <p class="promo-text">It's easy to see why - a well preserved cultural heritage, open borders and efficient infrastructure makes visiting Europe a breeze, and rarely will you have to travel more than a few hours.</p>
 		                    </div>
-		                    <div class="col-6 d-sm-none d-md-block d-xs-none">	
-	                        	<ul class="nav">
-							    	<li class="flight">
-							        	<a>Flight</a>
-							        	<div>
-							            	<p>Starting at</p>
-							            	<h6>$210</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="coffee">
-							        	<a>Hotel</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$5</h6>
-							       		</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="car">
-							        	<a>Car rental</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$20</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							      	</li>
-							    </ul>
-	                        </div>
-		                </div>
+                            <div class="col-3 d-none d-md-block offset-md-3">
+                                <ul class="nav nav-pills mynav" id="pills-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="image/icon_1.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="image/icon_2.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="image/icon_3.png"></a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">150</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">50</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">100</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item mycarousel">
+
+                <div class="carousel-item myheader">
                     <img class="d-block w-100" src="image/header-ind.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block text-left">
+                    <div class="carousel-caption d-none d-md-block text-left htext">
                     	<div class="row">
-                    		<div class="col-6 d-none d-md-block">
+                    		<div class="col-6 d-none d-md-block ">
 		                        <h4 class="promo-expiarence">EXPERIENCE</h4>
-		                        <h2 class="promo-country">Indian Holliday</h2>
+		                        <h1 class="promo-country text-uppercase">Indian Holliday</h1>
 		                        <p class="promo-text">There are a great number of Hindu Religious Festivals held throughout the world. A festival may be observed with acts of worship, offerings to deities, fasting, feasting, vigil, rituals, fairs, charity, celebrations, Puja, Homa, aarti etc.</p>
 	                        </div>
-	                        <div class="col-6 d-sm-none d-md-block d-xs-none">	
-	                        	<ul class="nav">
-							    	<li class="flight">
-							        	<a>Flight</a>
-							        	<div>
-							            	<p>Starting at</p>
-							            	<h6>$210</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="coffee">
-							        	<a>Hotel</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$5</h6>
-							       		</div>
-							        	<a>Check out offer</a>
-							        </li>
-							        <li class="car">
-							        	<a>Car rental</a>
-							        	<div>
-							          		<p>Starting at</p>
-							          		<h6>$20</h6>
-							        	</div>
-							        	<a>Check out offer</a>
-							      	</li>
-							    </ul>
-	                        </div>
+                            <div class="col-3 d-none d-md-block offset-md-3">
+                                <ul class="nav nav-pills mynav" id="pills-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="image/icon_1.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="image/icon_2.png"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="image/icon_3.png"></a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">250</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">50</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="bg-light b-info">
+                                        <p class="text-dark pl-2 pt-2 text-uppercase">starting at</p>
+                                        <h4 class="text-warning pl-2">100</h4>
+                                        <div class="bg-dark">
+                                            <a href="#" class="text-light pt-2 pb-2 d-block text-center text-uppercase">Check out offer</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,118 +232,178 @@
         <div class="container pt-5 pb-5">
             <div class="row mb-5">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <h3 class="text-uppercase font-weight-bold text-warning">Personally</h3>
-                    <h5 class="text-uppercase">tailored experiences</h5>
+                    <h2 class="text-uppercase text-left font-weight-bold text-warning">Personally</h2>
+                    <h5 class="text-uppercase text-left">tailored experiences</h5>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <p>From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East, TRAVELY offers escorted tours throughout Canada and the United States.</p>
+                    <p class="text-left font-weight-bold">From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East, TRAVELY offers escorted tours throughout Canada and the United States.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">399</h4>
+                    </div>
                     <img src="image/personal-img1.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                    	<p class="text-price ind text-light">Starting at</p>
+                    	<h4 class="price ind text-light font-weight-bold">259</h4>
+                    </div>
                     <img src="image/personal-img2.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                    	<p class="text-price ind text-light">Starting at</p>
+                    	<h4 class="price ind text-light font-weight-bold">920</h4>
+                    </div>
                     <img src="image/personal-img3.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                    	<p class="text-price ind text-light">Starting at</p>
+                    	<h4 class="price ind text-light font-weight-bold">210</h4>
+                    </div>
                     <img src="image/personal-img4.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                    	<p class="text-price ind text-light">Starting at</p>
+                    	<h4 class="price ind text-light font-weight-bold">310</h4>
+                    </div>
                     <img src="image/personal-img5.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 container">
+                    <div class="per-price">
+                    	<p class="text-price ind text-light">Starting at</p>
+                    	<h4 class="price ind text-light font-weight-bold">359</h4>
+                    </div>
                     <img src="image/personal-img6.jpg" class="img-responsive m-0 p-0" alt="">
                 </div>
             </div>
             <div class="d-flex">
-                <button type="button" class="btn btn-secondary ml-auto">View more</button>
+                <button type="button" class="btn btn-secondary ml-auto mt-3">View more</button>
             </div>
         </div>
     </section>
 
-    <section class="africa">
-        <div class="container text-center mt-5 mb-5">
+    <!-- Africa -->
+
+    <section class="africa jumbotron">
+        <div class="container text-center mt-5 mb-5 text-light">
             <p class="mb-4">Best Offers</p>
             <h4>EXPERIENCE</h4>
             <h1>AFRICAN SAFARI</h1>
             <p class="w-75 text-center mx-auto mb-5">Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors, its hospitality just gets better.</p>
-            <div class="d-flex justify-content-center p-3">
-                <div class="bg-secondary d-flex flex-column justify-content-end p-3">
+            <div class="p-2 afrproposition row">
+                <div class="offset-md-2"></div>
+                <div class="bg-secondary p-3 col-2">
+                    <img src="image/icon_1.png" class="mb-3">
                     <p class="">Starting at</p>
                     <h4 class="">$210</h4>
                 </div>
-                <div class="text-left p-3">
+                <div class="text-left p-3 bg-light col-6">
                     <h4 class="text-warning">KENYA</h4>
-                    <p class="w-75">A fantastic 4-day Camping Safari to Kenya's Premier Reserve - The Masai Mara.</p>
-                    <a href="">FIND OUT MORE</a>
+                    <p class="w-75 text-dark">A fantastic 4-day Camping Safari to Kenya's Premier Reserve - The Masai Mara.</p>
+                    <a href="" class="d-block text-dark font-weight-bold">FIND OUT MORE</a>
+                    <button type="button" class="btn btn-secondary afrbtn">View more</button>
+                    <img src="image/baduin.png" class="afrimg">
                 </div>
+                <div class="offset-md-2"></div>
             </div>
-            <div class="d-flex">
-                <button type="button" class="btn btn-secondary ml-auto">View more</button>
-            </div>
+
         </div>
     </section>
 
-    <section class="usa">
-    	<div class="mt-5 mb-5 container">
-	        <div class="text-left">
+    <!-- USA -->
+
+    <section class="usa pt-3">
+    	<div class="mt-5 pt-5 mb-5 container">
+	        <div class="text-left mb-5">
 	            <h4 class="text-uppercase text-warning">OPEN ROAD</h4>
 	            <h2 class="w-75 text-uppercase"> NORTH AMERICAN CitIEs TOUR</h2>
 	            <p class="w-50">America has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors, its hospitality just gets better.</p>
 	        </div>
-	        <div class="row container">
+	        <div class="row container pt-5">
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">399</h4>
+                    </div>
 	                <img src="image/america-img1.jpg" class="m-0 p-0" alt="">
 	            </div>
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">259</h4>
+                    </div>
 	                <img src="image/america-img2.jpg" class="m-0 p-0" alt="">
 	            </div>
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">920</h4>
+                    </div>
 	                <img src="image/america-img3.jpg" class="m-0 p-0" alt="">
 	            </div>
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">210</h4>
+                    </div>
 	                <img src="image/america-img4.jpg" class="m-0 p-0" alt="">
 	            </div>
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">310</h4>
+                    </div>
 	                <img src="image/america-img5.jpg" class="m-0 p-0" alt="">
 	            </div>
 	            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="per-price">
+                        <p class="text-price ind text-light">Starting at</p>
+                        <h4 class="price ind text-light font-weight-bold">359</h4>
+                    </div>
 	                <img src="image/america-img6.jpg" class="m-0 p-0" alt="">
 	            </div>
 	        </div>
 	        <div class="d-flex">
-	            <button type="button" class="btn btn-secondary ml-auto">View more</button>
+	            <button type="button" class="btn btn-secondary ml-auto mb-5 mt-5">View more</button>
 	        </div>
-	        
+
         </div>
     </section>
 
+    <!-- Taiwan -->
     <section class="taiwan">
         <div class="container pt-5 pb-5">
             <div class="w-25 p-3 bg-warning mb-5">
-                <h2 class="text-white mb-5 text-uppercase">Long<br> journey’s</h2>
-                <p class="text-uppercase text-white">Today
+                <h3 class="text-white mb-5 text-uppercase text-left">Long<br> journey’s</h3>
+                <p class="text-uppercase text-white text-left">Today
                     <br> 34,098
                     <br> departures</p>
             </div>
-            <div class="d-flex justify-content-end p-3 mb-5">
-                <div class=" p-3 w-50">
-                    <h4 class="text-warning w-75">Taiwan</h4>
-                    <p class="w-75">It is a modern cosmopolitan metropolis with a lively and diversified face, filled with exuberance.</p>
-                    <a href="">FIND OUT MORE</a>
+            <div class="p-3 mb-5 row">
+                <div class="offset-md-4"></div>
+                <div class=" p-3 w-50 bg-light col-md-5">
+                    <h4 class="text-warning text-left">Taiwan</h4>
+                    <p class="text-left">It is a modern cosmopolitan metropolis with a lively and diversified face, filled with exuberance.</p>
+                    <a href="#" class=" d-block text-left text-dark font-weight-bold">FIND OUT MORE</a>
                 </div>
-                <div class="bg-secondary d-flex flex-column justify-content-end p-3">
-                    <p class="">Starting at</p>
-                    <h4 class="">$359</h4>
+                <div class="bg-secondary p-3 col-md-2">
+                    <img src="image/icon_1.png" class="mb-3">
+                    <p class="text-light">Starting at</p>
+                    <h4 class="text-light">$359</h4>
                 </div>
+                <div class="offset-md-1"></div>
             </div>
         </div>
     </section>
-    <section class="bg-light">
+
+    <section class="bg-light ">
         <div class="container">
             <div class="d-flex">
                 <div class="p-2">
@@ -306,11 +412,11 @@
                         <button type="button" class="btn btn-secondary dropdown-toggle text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Last minute
                         </button>
-                        <div class="dropdown-menu p-3">
-                            <a href="#" class="text-uppercase text-dark d-block">Skiing</a>
-                            <a href="#" class="text-uppercase text-dark d-block">Mediterranean</a>
-                            <a href="#" class="text-uppercase text-dark d-block ">Europa</a>
-                            <a href="#" class="text-uppercase text-dark d-block">Long journey’s</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="text-uppercase text-dark d-block p-1">Skiing</a>
+                            <a href="#" class="text-uppercase text-dark d-block p-1">Mediterranean</a>
+                            <a href="#" class="text-uppercase text-dark d-block p-1">Europa</a>
+                            <a href="#" class="text-uppercase text-dark d-block p-1">Long journey’s</a>
                         </div>
                     </div>
                 </div>
@@ -320,37 +426,37 @@
                         <button type="button" class="btn btn-secondary dropdown-toggle text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Cruises
                         </button>
-                        <div class="dropdown-menu p-3" ">
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Skiing</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Mediterranean</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Europa</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Long journey’s</a>
+                        <div class="dropdown-menu">
+			  	      <a href=" " class="text-uppercase text-dark d-block p-1">Skiing</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-1">Mediterranean</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-1">Europa</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-1">Long journey’s</a>
 			  	  </div>
 			  	</div>
 			  </div>
-			  <div class="p-2 ">
+			  <div class="p-2">
 			  	<!-- Default dropup button -->
 			  	<div class="btn-group dropup ">
 			  	  <button type="button " class="btn btn-secondary dropdown-toggle text-uppercase " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
 			  	    WELLNESS
 			  	  </button>
-			  	  <div class="dropdown-menu p-3 ">
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Skiing</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Mediterranean</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Europa</a>
-			  	      <a href=" " class="text-uppercase text-dark d-block ">Long journey’s</a>
+			  	  <div class="dropdown-menu">
+			  	      <a href=" " class="text-uppercase text-dark d-block p-2">Skiing</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-2">Mediterranean</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-2">Europa</a>
+			  	      <a href=" " class="text-uppercase text-dark d-block p-2">Long journey’s</a>
 			  	  </div>
 			  	</div>
 			  </div>
-			  <div class="ml-auto p-2 ">
-			  	<button type="button " class="btn btn-secondary ml-auto ">View more</button>
+			  <div class="ml-auto p-2">
+			  	<button type="button " class="btn btn-secondary ml-auto">View more</button>
 			  </div>
 			</div>
 		</div>
 	</section>
 
-	<section class="contact">
-		<div class="container mb-5 mt-5 text-center ">
+	<section class="contact jumbotron">
+		<div class="container mt-5 text-center ">
 			<p class="text-uppercase ">NEWSLETTER</p>
 			<h2 class="text-warning text-uppercase ">Find out first</h2>
 			<h4 class="text-uppercase ">about the Best Offers</h4>
@@ -372,7 +478,7 @@
 			<p class="w-50 mx-auto ">Sign Up to get best offers on plane tickets, hotel bookings, rent a car and much more.</p>
 		</div>
 	</section>
-	<section class="text-secondary bg-secondary pb-4 pt-4 ">
+	<section class="text-secondary bg-secondary pb-2 pt-2">
 		<div class=" container d-flex flex-row justify-content-between align-items-center ">
 			<h4 class="text-white ">Partner<br>
 			<span class="text-warning ">Hotels</span></h4>
@@ -383,17 +489,15 @@
 			<img src="image/hotel-5.png " alt=" ">
 		</div>
 	</section>
-	<section>
-		<div class="your-class">
-		  <div>your content</div>
-		  <div>your content</div>
-		  <div>your content</div>
-		</div>
+
+    <!--Map  -->
+
+	<section class="pt-5 container">
+        <h2 class="text-warning mb-5 ">Find us here</h2>
+		<div id="map" class="mb-5 mt-3" style="height: 50vh; width: 80% "></div>
 	</section>
-	<section>
-		<div id="map" class=" " style="height: 100vh; width: 100% "></div>
-	</section>
-	<footer class="bg-warning pb-5 pt-5 ">
+
+	<footer class="bg-warning pb-3 pt-5 ">
 		<div class="d-flex flex-row justify-content-between container ">
 			<div>
 				<img src=" " alt=" ">
@@ -434,7 +538,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-
+    <script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>

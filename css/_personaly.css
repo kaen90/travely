@@ -1,0 +1,9 @@
+.personaly {
+  background-image: url("../image/world-map.png"); }
+
+.container {
+  position: relative;
+  text-align: center; }
+
+.ind {
+  position: absolute; }

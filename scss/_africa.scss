@@ -1,3 +1,19 @@
 .africa{
 	background-image: url("../image/zebra-bg.png");
+	background-size: cover;
+}
+.afrproposition{
+	position: relative;
+}
+.afrbtn{
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	z-index: 10;
+}
+.afrimg{
+	position: absolute;
+	right: -155px;
+	top: -125px;
+
 }
